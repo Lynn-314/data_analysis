@@ -22,3 +22,8 @@ UNION
 WHERE venue_country = "India"
 GROUP BY `Result`)
 ;
+
+### performance statistics against opponents
+SELECT count(ID) as `number of matches` , `Opposition`, `Result`  FROM `cricket-info-with-venue-country`
+GROUP BY `Result`,`Opposition`
+ORDER BY `Opposition`;
